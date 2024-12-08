@@ -1,0 +1,17 @@
+.line {
+  display: flex; /* Ensures image stays centered */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  margin: 20px 0; /* Add spacing around the line */
+}
+
+.line img {
+  width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Restrict maximum width for large screens */
+  height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 375px) {
+  .line img {
+    max-width: 300px; /* Restrict width further for mobile */
+  }
+}

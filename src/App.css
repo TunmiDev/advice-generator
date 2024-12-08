@@ -15,6 +15,8 @@ body {
   margin: 0;
   height: 100vh;
   position: relative;
+  overflow: hidden;
+  min-height: 100vh; /*Ensures it adjusts to the viewport height*/
 }
 .advice-container {
   color: #fff;
@@ -27,9 +29,24 @@ body {
   max-width: 500px;
   font-size: 1.3rem;
   line-height: 1.6;
+  overflow: hidden;
+  flex-direction: column;
 }
 .advice-id {
   color: var(--secondary-color);
   font-size: 13px;
   letter-spacing: 2px;
+}
+@media (max-width: 375px) {
+  body {
+    height: 100vh;
+  }
+  .advice-container {
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    width: 300px;
+    margin: 20px;
+  }
 }
