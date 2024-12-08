@@ -1,0 +1,35 @@
+:root {
+  --primary-color: hsl(193, 38%, 86%);
+  --secondary-color: hsl(150, 100%, 66%) /*Neon Green for advice head & button*/;
+  --grayishblue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%); /*bg color*/
+  --dark-blue: hsl(218, 23%, 16%);
+}
+body {
+  background-color: var(--dark-blue);
+  padding: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+.advice-container {
+  color: #fff;
+  background-color: var(--dark-grayish-blue);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 50px;
+  width: 600px;
+  max-width: 500px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+.advice-id {
+  color: var(--secondary-color);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
