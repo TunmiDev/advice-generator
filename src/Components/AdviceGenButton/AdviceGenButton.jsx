@@ -2,10 +2,10 @@ import React from "react";
 import "./AdviceGenButton.css";
 import image from "../../assets/images/icon-dice.svg";
 
-const AdviceGenButton = () => {
+const AdviceGenButton = ({ onClick }) => {
   return (
-    <div className="button">
-      <img src={image} alt="" />
+    <div className="button" onClick={onClick}>
+      <img src={image} alt="GEnerate Advice" />
     </div>
   );
 };
